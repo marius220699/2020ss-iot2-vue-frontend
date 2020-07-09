@@ -7,15 +7,12 @@
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-import Layout from './submodules/base_layout/src/components/interface'
-import Queue from './submodules/queue/src/App'
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
-    Layout,
-    Queue
+    
   }
 }
 </script>

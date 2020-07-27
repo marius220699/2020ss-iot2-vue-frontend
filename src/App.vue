@@ -1,20 +1,23 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+     <Layout>
+    <template v-slot:videocomponent> </template>
+    <template v-slot:controlcomponent> <controls msg="Tara Monheim"/></template>
+    <template v-slot:queuecomponent> Steuer den Roboter an die gewünschte Position mithilfe des Sliders, um dir die Plakate der Studenten anzuschauen.</template>
+    </Layout>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Layout from './submodules/base_layout/src/components/interface.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
-    
-  }
-}
+    Layout,
+    controls,
+  },
+};
 </script>
 
 <style>
@@ -27,3 +30,4 @@ export default {
   margin-top: 60px;
 }
 </style>
+

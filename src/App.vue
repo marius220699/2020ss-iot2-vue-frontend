@@ -1,21 +1,27 @@
 <template>
   <div id="app">
-     <Layout>
-    <template v-slot:videocomponent> </template>
-    <template v-slot:controlcomponent> <controls msg="Tara Monheim"/></template>
-    <template v-slot:queuecomponent> Steuer den Roboter an die gewünschte Position mithilfe des Sliders, um dir die Plakate der Studenten anzuschauen.</template>
+    <img alt="Vue logo" src="./assets/logo.png">
+    <Layout streamUrl = 'http://192.168.2.146:8080/stream.mjpg'> <!--hier kommt die Ip des Pi rein-->
+      <template v-slot:videocomponent></template>
+      <template v-slot:controlcomponent>
+        <Controls /></template>
+    <template v-slot:queuecomponent>
+        <queue></queue>
+      </template>
     </Layout>
   </div>
 </template>
-
 <script>
 import Layout from './submodules/base_layout/src/components/interface.vue';
+import Controls from './components/Controls.vue'
+ import queue from './components/Queues.vue'
 
 export default {
   name: 'App',
   components: {
     Layout,
-    controls,
+    Controls,
+    queue, 
   },
 };
 </script>

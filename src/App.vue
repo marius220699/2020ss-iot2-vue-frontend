@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <Layout streamUrl = 'http://192.168.2.146:8080/stream.mjpg'> <!--hier kommt die Ip des Pi rein-->
+    <Layout streamUrl = 'http://hal.hfg.design:50005/live-20980.mjpg'> <!--hier kommt die Ip des Pi rein-->
       <template v-slot:videocomponent></template>
       <template v-slot:controlcomponent>
         <Controls /></template>

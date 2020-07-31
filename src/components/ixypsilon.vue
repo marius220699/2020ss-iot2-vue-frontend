@@ -74,18 +74,21 @@
 </script>
 
 <style scoped>
-  #border {
-    border: 1.5px solid rgb(139, 139, 139);
-    border-radius: 8px;
+
+ #border {
+    border: 0.5px solid rgb(139, 139, 139);
+    border-radius: 15px;
     padding: 5%;
     height: 200px;
+    width: 300px;
+    float: left;
   }
 
   #xy {
     position: relative;
     height: 100%;
     width: 60%;
-    background-color: lightgrey;
+    background-color: white;
     border-radius: 6px;
   }
 
@@ -94,7 +97,7 @@
     border-radius: 2px;
     width: 5%;
     height: 7.5%;
-    background-color: rgb(75, 75, 75);
+    background-color: rgb(178,223,238);
     transform: translate(-50%, -50%);
     transition: left 0.2s ease-out, top 0.2s ease-out;
     pointer-events: none;

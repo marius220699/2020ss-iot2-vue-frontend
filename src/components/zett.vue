@@ -76,8 +76,8 @@ export default {
 #border {
   float: right;
   width: 20%;
-  border: 1.5px solid rgb(139, 139, 139);
-  border-radius: 8px;
+  border: 0.5px solid rgb(139, 139, 139);
+  border-radius: 15px;
   padding: 5%;
   height: 200px;
 }
@@ -86,7 +86,7 @@ export default {
   position: relative;
   height: 100%;
   width:  25%;
-  background-color: lightgrey;
+  background-color: white;
   border-radius: 6px;
 }
 
@@ -95,7 +95,7 @@ export default {
   border-radius: 2px;
   width: 185%;
   height: 7%;
-  background-color: rgb(75, 75, 75);
+  background-color: rgb(178,223,238);
   transform: translate(-25%, -25%);
   transition: left 0.2s ease-out, top 0.2s ease-out;
   pointer-events: none;

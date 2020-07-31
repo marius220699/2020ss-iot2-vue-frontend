@@ -15,7 +15,8 @@
             srcurl: {
                 type: String,
                 //CHANGEME: hier (vorerst) lokale IP-Adresse des Pi eintragen!
-                default: "'http://192.168.2.146:8080/stream.mjpg"
+                default: "'http://172.21.13.219:8080/stream.mjpg" //seilkamera pi
+
             }
         }
     }

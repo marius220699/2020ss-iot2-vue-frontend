@@ -38,6 +38,7 @@ export default {
         const y = (clientY - top) / offsetHeight;
         console.log(x)
         this.point = [0,y];
+        this.$socket.emit("positionz", this.point);
         console.log(this.point)
       },
       offset(el) {

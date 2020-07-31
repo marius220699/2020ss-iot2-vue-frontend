@@ -34,7 +34,7 @@
         const x = (clientX - left) / offsetWidth;
         const y = (clientY - top) / offsetHeight;
         this.point = [x, y] 
-        this.$socket.emit('position', this.point); //im backend eingegeben 
+        this.$socket.emit('positionxy', this.point); //im backend eingegeben 
       },
       offset(el) {
         const isBody = el.tagName === 'BODY'

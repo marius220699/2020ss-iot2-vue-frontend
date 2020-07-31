@@ -10,7 +10,7 @@ import VueSocketIO from 'vue-socket.io'
 Vue.use(new VueSocketIO({
   debug: true,
   // eslint-disable-next-line no-template-curly-in-string
-  connection: 'https://hal.hfg.design:10000/spidercambot_control',
+  connection: 'https://hal.hfg.design:10000/mariusbot_control',
   options: {
     useConnectionNamespace: true,
   },

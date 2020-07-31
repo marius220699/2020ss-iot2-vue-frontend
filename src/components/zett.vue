@@ -58,17 +58,6 @@ export default {
        return point;
       }
   },
-  sockets: {
-    connect: function() {
-      console.log("socket connected");
-    },
-    nachrichtenname: function(data) {
-      console.log(
-        'this method was fired by the socket server. eg: io.emit("nachrichtenname"',
-        data
-      );
-    }
-  }
   //hier folgen ggf. noch methods, mounted() usw.
 };
 </script>

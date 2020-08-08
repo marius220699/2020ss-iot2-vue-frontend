@@ -34,12 +34,12 @@ export default {
           offsetHeight,
           offsetWidth
         } = e.target;
-        const x = (clientX - left) / offsetWidth;
-        const y = (clientY - top) / offsetHeight;
-        console.log(x)
-        this.point = [0,y];
-        this.$socket.emit("positionz", this.point);
-        console.log(this.point)
+        let x = (clientX - left) / offsetWidth;
+        let y = (clientY - top) / offsetHeight;
+        x = 0;
+        this.point = [x, y];
+        this.$socket.emit("positionz", this.point[1]);
+        console.log(this.point[1]);
       },
       offset(el) {
         const isBody = el.tagName === 'BODY'

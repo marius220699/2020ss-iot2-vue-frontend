@@ -87,7 +87,7 @@
   #xy {
     position: relative;
     height: 100%;
-    width: 60%;
+    width: 90%;
     background-color: white;
     border-radius: 6px;
   }
